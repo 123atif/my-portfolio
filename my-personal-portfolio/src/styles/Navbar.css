@@ -1,0 +1,31 @@
+/* .image {
+  mix-blend-mode: difference;
+  height: 10rem;
+  width: 15rem;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 170px;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.nav-contact {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-contact:hover {
+  transform: scale(1.06);
+}

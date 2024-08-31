@@ -1,11 +1,14 @@
+import About from "./components/About";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello</h1>
-      </div>
+      <Navbar />
+      <Hero />
+      <About />
     </>
   );
 }
