@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Hero.css";
+import "../styles/hero.css";
 import atif22 from "../assets/atif22.jpg";
 const Hero = () => {
   return (
