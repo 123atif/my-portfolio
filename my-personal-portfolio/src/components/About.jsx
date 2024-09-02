@@ -1,15 +1,14 @@
 import React from "react";
 import "../styles/about.css";
-import theme_pattern from "../assets/theme_pattern.svg";
 import Atif from "../assets/Atif.jpeg";
 import { Tilt } from "react-tilt";
+import Heading from "../common/Heading";
 
 const About = () => {
   return (
     <div className="about">
-      <div className="about-title">
-        <h1>About Me</h1>
-        <img src={theme_pattern} alt="theme_pattern" />
+      <div>
+        <Heading heading="About Me" />
       </div>
       <div className="about-sections">
         <div className="about-left">

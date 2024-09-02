@@ -1,0 +1,15 @@
+.common-heading {
+  position: relative;
+}
+.common-heading h1 {
+  padding: 0rem 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.common-heading img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
