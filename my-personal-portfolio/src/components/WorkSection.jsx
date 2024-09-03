@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Heading from "../common/Heading";
 import "../styles/worksection.css";
-import arrow from "../assets/arrow_icon.svg";
+import { FaArrowRight } from "react-icons/fa";
+
 import { myWork } from "../data";
 
 const WorkSection = () => {
@@ -25,7 +26,7 @@ const WorkSection = () => {
       </div>
       <div className="mywork-showmore" onClick={() => setReadMore(!readMore)}>
         <p>{readMore ? "Show Less" : "Show More"}</p>
-        <img src={arrow} alt="arrow-icon" />
+        <FaArrowRight className="arrow" />
       </div>
     </div>
   );

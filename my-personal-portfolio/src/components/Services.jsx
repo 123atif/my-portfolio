@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/services.css";
 import Heading from "../common/Heading";
 import { Services_Data } from "../data";
-import arrow from "../assets/arrow_icon.svg";
+import { FaArrowRight } from "react-icons/fa";
 
 const Services = () => {
   const [readMore, setReadMore] = useState(false);
@@ -28,7 +28,7 @@ const Services = () => {
               <div className="services-readmore">
                 <p onClick={() => setReadMore(() => !readMore)}>
                   {readMore ? "Less" : "Read More"}
-                  <img src={arrow} alt="arrow-icon" />
+                  <FaArrowRight className="arrow" />
                 </p>
               </div>
             </div>
