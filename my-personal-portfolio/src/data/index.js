@@ -1,8 +1,15 @@
-const Services_Data = [
+import job from "../assets/job-listing-project.png";
+import snapgram from "../assets/snapgram-project.png";
+import todo_project from "../assets/todo-project.png";
+import food from "../assets/food-app.png";
+import robot from "../assets/robot.png";
+import movie from "../assets/movie.png";
+
+export const Services_Data = [
   {
     id: 1,
     s_no: "01",
-    s_name: "Web Design",
+    s_name: "Website Design",
     s_desc:
       "Transform your vision into a stunning online presence with our innovative web design services. We craft user-friendly, responsive websites that captivate your audience and elevate your brand.",
   },
@@ -22,4 +29,35 @@ const Services_Data = [
   },
 ];
 
-export default Services_Data;
+export const myWork = [
+  {
+    id: 1,
+    link: "https://github.com/123atif/job-listing-front-end",
+    w_img: job,
+  },
+  {
+    id: 2,
+    link: "https://github.com/123atif/crud-with-login-register",
+    w_img: todo_project,
+  },
+  {
+    id: 3,
+    link: "https://123atif.github.io/movieapp/",
+    w_img: movie,
+  },
+  {
+    id: 4,
+    link: "https://github.com/123atif/snapgram",
+    w_img: snapgram,
+  },
+  {
+    id: 5,
+    link: "https://123atif.github.io/movieapp/",
+    w_img: food,
+  },
+  {
+    id: 6,
+    link: "https://123atif.github.io/reactfriend/",
+    w_img: robot,
+  },
+];
