@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/navbar.css";
 import logo from "../assets/logo.svg";
 import underline from "../assets/nav_underline.svg";
-// import portfolio from "../assets/portfolio.png";
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
   return (
