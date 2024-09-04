@@ -9,7 +9,7 @@ const Hero = () => {
         <span> I'm Atif Arshad,</span> web developer based in Pakistan
       </h1>
       <p>
-        I'm a front-end developer based in Lahore, PK, with over a year of
+        I'm a front-end developer based in Lahore, PK with over a year of
         experience in creating engaging and user-friendly web interfaces.
       </p>
       <div className="hero-action">
