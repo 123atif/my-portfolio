@@ -8,7 +8,7 @@ const Services = () => {
   const [readMore, setReadMore] = useState(false);
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="services-heading">
         <Heading heading="My Services" />
       </div>

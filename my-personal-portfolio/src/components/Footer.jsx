@@ -5,7 +5,7 @@ import user_icon from "../assets/user_icon.svg";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-top">
         <div className="footer-top-left">
           <img src={footer_logo} alt="footer_logo" />

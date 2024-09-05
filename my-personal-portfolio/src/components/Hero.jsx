@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/hero.css";
 import atif22 from "../assets/atif22.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <img src={atif22} alt="Hero" className="hero-img" />
       <h1>
         <span> I'm Atif Arshad,</span> web developer based in Pakistan
@@ -13,7 +15,11 @@ const Hero = () => {
         experience in creating engaging and user-friendly web interfaces.
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect With me</div>
+        <div className="hero-connect">
+          <AnchorLink className="anchor-link" offset={50} href="#footer">
+            Connect With me
+          </AnchorLink>
+        </div>
         <div className="hero-resume">My Resume</div>
       </div>
     </div>

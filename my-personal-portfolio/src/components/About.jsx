@@ -6,7 +6,7 @@ import Heading from "../common/Heading";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div>
         <Heading heading="About Me" />
       </div>

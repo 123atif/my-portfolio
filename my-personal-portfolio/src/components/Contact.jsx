@@ -4,10 +4,34 @@ import Heading from "../common/Heading";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5fc780a9-967a-46c1-9b60-bef2b46102af");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      toast.success(res.message);
+    }
+  };
+
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div>
         <Heading heading="Get In Touch" />
       </div>
@@ -38,7 +62,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-right">
-          <form>
+          <form onSubmit={onSubmit}>
             <label htmlFor="name">Your Name</label>
             <input type="text" name="name" placeholder="Enter your name" />
             <label htmlFor="email">Email</label>
@@ -51,7 +75,6 @@ const Contact = () => {
               rows="10"
             ></textarea>
             <button type="submit" className="contact-submit">
-              {" "}
               Submit now
             </button>
           </form>

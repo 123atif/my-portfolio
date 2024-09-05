@@ -9,7 +9,7 @@ const WorkSection = () => {
   const [readMore, setReadMore] = useState(false);
   const displayedWork = readMore ? myWork : myWork.slice(0, 3);
   return (
-    <div className="my-work">
+    <div className="my-work" id="work">
       <div>
         <Heading heading="My Latest Work" />
       </div>

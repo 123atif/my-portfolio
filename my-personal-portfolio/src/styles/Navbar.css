@@ -18,7 +18,7 @@
 }
 
 .nav-contact {
-  padding: 20px 40px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   font-size: 1rem;
@@ -28,4 +28,15 @@
 
 .nav-contact:hover {
   transform: scale(1.06);
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-menu img {
+  display: flex;
+  margin: auto;
 }
