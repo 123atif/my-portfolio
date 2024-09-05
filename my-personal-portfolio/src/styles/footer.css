@@ -83,7 +83,6 @@
   .footer-top-right {
     display: flex;
     flex-direction: column;
-
     gap: 1rem;
   }
   .footer-top-right input {
