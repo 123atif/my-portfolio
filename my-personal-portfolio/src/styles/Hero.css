@@ -9,6 +9,9 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
 .hero h1 {
@@ -40,6 +43,20 @@
   margin-bottom: 4rem;
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-6.2rem);
+  }
+  /* 80% {
+      transform: translateX(10px);
+    } */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .hero-connect {
   padding: 1.5rem 2.5rem;
   border-radius: 50px;
@@ -64,4 +81,56 @@
 .hero-resume:hover {
   border: 2px solid #b923e1;
   transform: scale(1.06);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: 9rem;
+    margin-top: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-action {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-img {
+    width: 9rem;
+    margin-top: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-action {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .anchor-link {
+    font-size: 1rem;
+  }
 }

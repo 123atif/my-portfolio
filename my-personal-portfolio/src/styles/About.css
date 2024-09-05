@@ -79,3 +79,82 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    gap: 4rem;
+    margin: 5rem 2rem;
+    align-items: center;
+  }
+  .about-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-sections p {
+    font-size: 1rem;
+  }
+  .about-sections img {
+    width: 18rem;
+  }
+  .about-skill {
+    gap: 1.2rem;
+    line-height: 2rem;
+    align-items: center;
+  }
+  .about-achievments {
+    justify-content: space-between;
+  }
+  .about-achievments {
+    gap: 1rem;
+  }
+  .about-achievments h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #html {
+    width: 100%;
+  }
+  #js {
+    width: 90%;
+  }
+  #react {
+    width: 97%;
+  }
+  #next {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  #html {
+    width: 100%;
+  }
+  #js {
+    width: 90%;
+  }
+  #react {
+    width: 97%;
+  }
+  #next {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-achievments {
+    justify-content: space-between;
+  }
+  .about-achievments {
+    gap: 1.2rem;
+  }
+  .about-achievments h1 {
+    font-size: 1.6rem;
+  }
+  .about-achievments p {
+    font-size: 10px;
+    text-align: center;
+  }
+}

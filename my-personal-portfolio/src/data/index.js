@@ -1,6 +1,8 @@
 import job from "../assets/job-listing-project.png";
-import snapgram from "../assets/snapgram-project.png";
-import todo_project from "../assets/todo-project.png";
+import snapgram from "../assets/snapgram.svg";
+// import todo_project from "../assets/todo-project.png";
+import dashboard from "../assets/dashboard.png";
+
 import food from "../assets/food-app.png";
 import robot from "../assets/robot.png";
 import movie from "../assets/movie.png";
@@ -38,7 +40,7 @@ export const myWork = [
   {
     id: 2,
     link: "https://github.com/123atif/crud-with-login-register",
-    w_img: todo_project,
+    w_img: dashboard,
   },
   {
     id: 3,

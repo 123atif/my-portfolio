@@ -67,3 +67,20 @@
     margin-top: 0rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .mywork-container img {
+    width: 17rem;
+    height: 15rem;
+    /* object-fit: fill; */
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 1rem;
+    transition: 0.5s;
+  }
+  .mywork-container img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    border: 2px solid #b923e1;
+  }
+}

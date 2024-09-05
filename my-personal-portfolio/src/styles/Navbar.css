@@ -40,3 +40,51 @@
   display: flex;
   margin: auto;
 }
+
+.nav-menu-close {
+  display: none;
+}
+
+.nav-menu-open {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    margin: 1rem 3rem;
+  }
+  .nav-contact {
+    display: none;
+  }
+  .nav-menu-open {
+    display: block;
+    position: relative;
+    left: 1rem;
+  }
+  .nav-menu-close {
+    display: block;
+    position: relative;
+    top: 1.8rem;
+    left: 11rem;
+    /* width: 1.8rem; */
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 1.8rem;
+    background: #1f0016;
+    width: 14rem;
+    height: 100vh;
+    transition: right 0.5s;
+    z-index: 2;
+    right: -21rem;
+  }
+  .nav-menu li {
+    font-size: 1.8rem;
+    padding-left: 6rem;
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+}
