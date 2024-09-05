@@ -48,3 +48,22 @@
 .arrow {
   margin-top: 0.3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .mywork-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mywork-showmore p {
+    font-size: 0.9rem;
+    gap: 1rem;
+    border-radius: 40px;
+    /* padding: 0rem 0.3rem; */
+    width: 5rem;
+  }
+  .arrow {
+    margin-top: 0rem;
+  }
+}

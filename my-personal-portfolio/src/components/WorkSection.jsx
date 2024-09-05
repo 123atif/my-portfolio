@@ -11,7 +11,7 @@ const WorkSection = () => {
   return (
     <div className="my-work" id="work">
       <div>
-        <Heading heading="My Latest Work" />
+        <Heading heading="My Work" />
       </div>
       <div className="mywork-container">
         {displayedWork.map((mywork) => {

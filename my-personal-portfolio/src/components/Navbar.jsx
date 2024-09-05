@@ -1,16 +1,37 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../styles/navbar.css";
 import logo from "../assets/logo.svg";
 import underline from "../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { LuMenu } from "react-icons/lu";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  };
+  const closeMenu = () => {
+    menuRef.current.style.right = "-21rem";
+  };
+
   return (
     <>
       <div className="navbar">
         <img src={logo} alt="Portfolio" />
-        <ul className="nav-menu">
+        <LuMenu
+          style={{ width: "3rem", height: "3rem", cursor: "pointer" }}
+          className="nav-menu-open"
+          onClick={openMenu}
+        />
+        <ul className="nav-menu" ref={menuRef}>
+          <RxCross2
+            style={{ width: "2rem", height: "2rem", cursor: "pointer" }}
+            className="nav-menu-close"
+            onClick={closeMenu}
+          />
           <li>
             <AnchorLink className="anchor-link" offset={50} href="#home">
               <p onClick={() => setMenu("home")}>

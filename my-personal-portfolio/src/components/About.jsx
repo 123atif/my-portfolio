@@ -32,17 +32,17 @@ const About = () => {
               bring to each project.
             </p>
             <div className="about-skills">
-              <div className="about-skill">
+              <div className="about-skill" id="html">
                 <p>HTML & CSS</p>
                 <hr style={{ width: "65%" }}></hr>
               </div>
-              <div className="about-skill">
+              <div className="about-skill" id="js">
                 <p>Javascript</p> <hr style={{ width: "60%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" id="react">
                 <p>React Js</p> <hr style={{ width: "70%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" id="next">
                 <p>Next Js</p> <hr style={{ width: "60%" }} />
               </div>
             </div>

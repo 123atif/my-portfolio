@@ -61,3 +61,21 @@
   background-clip: text;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .service-format h3 {
+    font-size: 1.5rem;
+  }
+  .service-format h2 {
+    font-size: 1.8rem;
+  }
+  .service-format p {
+    font-size: 1rem;
+  }
+}

@@ -46,17 +46,26 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <IoIosMail style={{ width: "2rem", height: "2rem" }} />
+              <IoIosMail
+                style={{ width: "2rem", height: "2rem" }}
+                className="icon"
+              />
               <a href="mailto:atifarshad593@gmail.com">
                 atifarshad593@gmail.com
               </a>
             </div>
             <div className="contact-detail">
-              <IoCall style={{ width: "2rem", height: "2rem" }} />
+              <IoCall
+                style={{ width: "2rem", height: "2rem" }}
+                className="icon"
+              />
               <a href="tel:0324-5725778">0324-5725778</a>
             </div>
             <div className="contact-detail">
-              <FaLocationDot style={{ width: "2rem", height: "2rem" }} />
+              <FaLocationDot
+                style={{ width: "2rem", height: "2rem" }}
+                className="icon"
+              />
               <p>Lahore, PK</p>
             </div>
           </div>

@@ -103,3 +103,28 @@ form {
 .contact-submit:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+  .contact-sections {
+    flex-direction: column;
+  }
+  .contact-left h1 {
+    font-size: 2.5rem;
+  }
+  .contact-left p {
+    font-size: 1rem;
+  }
+  .contact-detail a {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .contact-right label {
+    font-size: 1rem;
+  }
+  .contact-right input {
+    width: 90%;
+  }
+  .contact-right textarea {
+    width: 90%;
+  }
+}
