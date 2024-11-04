@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../styles/navbar.css";
-import logo from "../assets/logo.svg";
+import computer from "../assets/computers.gif";
 import underline from "../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { LuMenu } from "react-icons/lu";
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <img src={logo} alt="Portfolio" />
+        <img src={computer} alt="Portfolio" />
         <LuMenu
           style={{ width: "3rem", height: "3rem", cursor: "pointer" }}
           className="nav-menu-open"

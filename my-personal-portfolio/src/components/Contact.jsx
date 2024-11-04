@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/contact.css";
 import Heading from "../common/Heading";
 import { FaLocationDot } from "react-icons/fa6";
@@ -7,8 +7,11 @@ import { IoCall } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true);
     const formData = new FormData(event.target);
 
     formData.append("access_key", "5fc780a9-967a-46c1-9b60-bef2b46102af");
@@ -27,6 +30,7 @@ const Contact = () => {
 
     if (res.success) {
       toast.success(res.message);
+      setIsSubmitting(false);
     }
   };
 
@@ -73,18 +77,34 @@ const Contact = () => {
         <div className="contact-right">
           <form onSubmit={onSubmit}>
             <label htmlFor="name">Your Name</label>
-            <input type="text" name="name" placeholder="Enter your name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" placeholder="Enter your email" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
             <label htmlFor="message">Write your Message here</label>
             <textarea
               name="message"
               placeholder="Enter your message"
               cols="30"
               rows="10"
+              required
             ></textarea>
-            <button type="submit" className="contact-submit">
-              Submit now
+            <button
+              type="submit"
+              className="contact-submit"
+              disabled={isSubmitting}
+              style={{ cursor: isSubmitting ? "not-allowed" : "pointer" }}
+            >
+              {isSubmitting ? "Sending..." : "Submit now"}
             </button>
           </form>
         </div>

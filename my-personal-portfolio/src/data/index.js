@@ -54,7 +54,7 @@ export const myWork = [
   },
   {
     id: 5,
-    link: "https://123atif.github.io/movieapp/",
+    link: "https://github.com/123atif/food-app",
     w_img: food,
   },
   {

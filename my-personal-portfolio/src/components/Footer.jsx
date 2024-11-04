@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/footer.css";
-import footer_logo from "../assets/footer_logo.svg";
 import user_icon from "../assets/user_icon.svg";
+import computer from "../assets/computers.gif";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={footer_logo} alt="footer_logo" />
+          <img src={computer} alt="footer_logo" />
           <p>
             I'm a front-end developer with over a year of experience in creating
             web designs.
