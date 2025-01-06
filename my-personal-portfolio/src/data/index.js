@@ -1,17 +1,16 @@
 import job from "../assets/job-listing-project.png";
 import snapgram from "../assets/snapgram.svg";
-// import todo_project from "../assets/todo-project.png";
 import dashboard from "../assets/dashboard.png";
-
+import eCommerce from "../assets/e-com.png";
 import food from "../assets/food-app.png";
 import robot from "../assets/robot.png";
 import movie from "../assets/movie.png";
-
+import indya from "../assets/indya.png";
 export const Services_Data = [
   {
     id: 1,
     s_no: "01",
-    s_name: "Website Design",
+    s_name: "Website Design & Development",
     s_desc:
       "Transform your vision into a stunning online presence with our innovative web design services. We craft user-friendly, responsive websites that captivate your audience and elevate your brand.",
   },
@@ -44,8 +43,8 @@ export const myWork = [
   },
   {
     id: 3,
-    link: "https://123atif.github.io/movieapp/",
-    w_img: movie,
+    link: "https://github.com/123atif/e-commerce-react",
+    w_img: eCommerce,
   },
   {
     id: 4,
@@ -59,7 +58,17 @@ export const myWork = [
   },
   {
     id: 6,
+    link: "https://github.com/walifile/andya-ai-main-site/tree/feat/design-pages-atif",
+    w_img: indya,
+  },
+  {
+    id: 7,
     link: "https://123atif.github.io/reactfriend/",
     w_img: robot,
+  },
+  {
+    id: 8,
+    link: "https://123atif.github.io/movieapp/",
+    w_img: movie,
   },
 ];
