@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className="hero-resume">
           <a
-            href="https://drive.google.com/file/d/1iU0rmJXt02RXuotkPUV8dfVsOcQzTYXW/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NgCQhX4Yx68WI1ymJ-B2fIPaFTkVW_8v/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
