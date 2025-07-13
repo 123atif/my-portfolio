@@ -6,6 +6,7 @@ import food from "../assets/food-app.png";
 import robot from "../assets/robot.png";
 import movie from "../assets/movie.png";
 import indya from "../assets/indya.png";
+import image from "../assets/image.png";
 export const Services_Data = [
   {
     id: 1,
@@ -31,6 +32,11 @@ export const Services_Data = [
 ];
 
 export const myWork = [
+  {
+    id: 0,
+    link: "https://smart-prop-firm-site-r9kj.vercel.app/",
+    w_img: image,
+  },
   {
     id: 1,
     link: "https://github.com/123atif/job-listing-front-end",

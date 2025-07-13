@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/footer.css";
 import user_icon from "../assets/user_icon.svg";
 import computer from "../assets/computers.gif";
@@ -10,8 +9,8 @@ const Footer = () => {
         <div className="footer-top-left">
           <img src={computer} alt="footer_logo" />
           <p>
-            I'm a front-end developer with over a year of experience in creating
-            web designs.
+            I am a Full Stack developer with over a year of experience in
+            creating web designs.
           </p>
         </div>
         <div className="footer-top-right">
